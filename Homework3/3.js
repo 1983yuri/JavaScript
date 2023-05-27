@@ -14,15 +14,15 @@ const userNum2 = +prompt('Введите число номер 2:');
 const userNum3 = +prompt('Введите число номер 3:');
 
 function userMaxNum(num1, num2, num3) {
-    if (num1 > num2 && num1 > num3) {
-        return num1;
-    }
-    else if (num2 > num1 && num2 > num3) {
-        return num2;
-    }
-    else {
-        return num3;
-    }
+    // if (num1 > num2 && num1 > num3) {
+    //     return num1;
+    // } else if (num2 > num1 && num2 > num3) {
+    //     return num2;
+    // } else {
+    //     return num3;
+    // }2
+    return console.log(`Максимальное значение среди чисел ${num1}, ${num2}, ${num3} 
+    равно: ${Math.max(num1, num2, num3)}`);
 }
-alert(`Максимальное значение среди чисел ${userNum1}, ${userNum2}, ${userNum3} 
-равно: ${userMaxNum(userNum1, userNum2, userNum3)}`);
+userMaxNum(userNum1, userNum2, userNum3);
+

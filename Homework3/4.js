@@ -19,30 +19,27 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 */
 /**
  * 
- * @param {число1} num1 
- * @param {число2} num2 
- * @returns результат сложения чисел
+ * @param {number} num1 
+ * @param {number} num2 
+ * @returns {number} результат сложения чисел
  */
 const sum = (num1, num2) => {
-    const result = num1 + num2;
-    return result;
+    return num1 + num2;
 }
 
 /**
  * 
- * @param {число1} num1 
- * @param {число2} num2 
- * @returns результат разности чисел, из большего вычитается меньшее
+ * @param {number} num1 
+ * @param {number} num2 
+ * @returns {number} результат разности чисел, из большего вычитается меньшее
  */
 const diff = (num1, num2) => {
     let result;
     if (num1 > num2) {
         result = num1 - num2;
-    }
-    else if (num2 > num1) {
+    } else if (num2 > num1) {
         result = num2 - num1;
-    }
-    else {
+    } else {
         result = 0;
     }
     return result;
@@ -50,23 +47,21 @@ const diff = (num1, num2) => {
 
 /**
  * 
- * @param {число1} num1 
- * @param {число2} num2 
- * @returns результат умножения чисел
+ * @param {number} num1 
+ * @param {number} num2 
+ * @returns {number} результат умножения чисел
  */
 const mult = (num1, num2) => {
-    const result = num1 * num2;
-    return result;
+    return num1 * num2;
 }
 
 
 /**
  * 
- * @param {число1} num1 
- * @param {число2} num2 
- * @returns результат деления(частное) чисел
+ * @param {number} num1 
+ * @param {number} num2 
+ * @returns {number} результат деления(частное) чисел
  */
 const div = (num1, num2) => {
-    const result = num1 / num2;
-    return result;
+    return num1 / num2;
 }

@@ -9,15 +9,12 @@
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 function getDeductionOfTax(num) {
-    const result = num - (num * 0.13);
-    return result;
+    return ((num - num * 0.13).toFixed(2));
 }
-
 const salary = +prompt('Введите размер своей зарплаты(числом):');
 if (!Number.isFinite(salary)) {
     console.log('Значение задано неверно');
-}
-else {
+} else {
     console.log(`Размер заработной платы за вычетом налогов равен: ${getDeductionOfTax(salary)}`);
 }
 

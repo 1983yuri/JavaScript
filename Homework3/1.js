@@ -9,10 +9,8 @@
 function getCubeDegree(num) {
     if (!Number.isFinite(num)) {
         return 'You inputed a non numeric value!';
-    }
-    else {
-        const result = Math.pow(num, 3);
-        return result;
+    } else {
+        return Math.pow(num, 3);
     }
 }
 const userNum = +prompt('Input a number');
