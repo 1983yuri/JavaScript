@@ -64,3 +64,4 @@ else {
     alert(`Сотен: ${hundredOfNum} \n Десятков: ${tenOfNum} \n Единиц: ${unitOfNum}`);
 }
 
+
