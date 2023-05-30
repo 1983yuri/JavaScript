@@ -16,7 +16,9 @@ for (let i = 0; i <= 10; i++) {
         console.log(str = str += ' - это ноль');
     } else if (i % 2 !== 0) {
         console.log(str = str += ' - нечетное число');
-    } else { console.log(str = str += ' - четное число') }
+    } else {
+        console.log(str = str += ' - четное число')
+    }
 }
 
 

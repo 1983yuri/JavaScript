@@ -13,6 +13,6 @@ xxxxx
 */
 let str = '';
 for (let i = 0; i < 20; i++) {
-    str = ('x' + str);
+    str = 'x' + str;
     console.log(str);
 }

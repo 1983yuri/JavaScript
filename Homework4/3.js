@@ -25,13 +25,13 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log(sum);
 
-console.log(Math.min.apply(null, (arr)));
+console.log(Math.min(...arr));
 
 const newArr = [];
 let j = 0;
 for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 3) {
-        newArr[j] = i;
+        newArr[j] = i;                 // Можно использовать newArr.push
         j++;
     }
 }
