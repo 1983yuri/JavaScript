@@ -31,8 +31,7 @@ const products = [
 ];
 
 const productsWithPhotos = products.filter((prod) => {
-  if (prod.photos && prod.photos.length) return true
-  return false
+  return prod.photos && prod.photos.length > 0;
 });
 console.log(productsWithPhotos);
 
