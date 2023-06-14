@@ -32,10 +32,14 @@ document.addEventListener('click', (e) => {
     const tagEl = e.target.tagName.toLowerCase();
     if (e.target.classList.contains('super_element')) {
         console.log(`Класс "super_element" присутствует в элементе ${tagEl}`);
-    }
-    else {
+    } else {
         console.log(`Класс "super_element" отсутствует в элементе ${tagEl}`);
     }
+});
+// Второй вариант от преподавателя:
+document.addEventListener('click', (e) => {
+    const containStr = event.target.classList.contains('super_element') ? 'присутствует' : 'отсутствует';
+    console.log(`Класс "super_element" ${containStr} в элементе "${event.target.tagName.toLowerCase()}".`);
 });
 /*
 4. Сделайте, чтобы при наведении на textarea в консоли появлялось сообщение:
@@ -46,6 +50,13 @@ document.addEventListener('mouseover', (e) => {
         console.log('Вы навели на textarea.');
     }
 });
+// С правками преподавателя:
+
+const taEl = document.querySelector('textarea');
+taEl.addEventListener('mouseover', () => {
+    console.log('Вы навели на textarea.');
+})
+
 /*
 5. Необходимо повесить событие клика на тег ul. В обработчике события в
 консоль необходимо выводить текст, который записан внутри элемента кнопки,
