@@ -16,3 +16,4 @@ appEl.innerHTML = dataBlocks.reduce((acc, block) => {
     `
     );
 }, "");
+
